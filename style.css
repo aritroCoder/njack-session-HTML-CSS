@@ -6,30 +6,58 @@
     font-family: 'Raleway', sans-serif;
 }
 
+body{
+    background-image: url('https://img.freepik.com/premium-vector/abstract-background-polygonal-vector-design_187482-750.jpg?w=2000');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .container{
-    margin: 10px;
+    margin: 10px auto;
     padding: 10px;
     border: 1px solid rgb(230, 212, 191);
     text-align: center;
     background-color: rgb(245, 237, 228);
+    width: 50vw;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    min-height: 480px;
+    justify-content: space-evenly;
+}
+
+.inputgroup{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(245, 237, 228);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 label{
-    margin: 10px;
-    padding-top: 10px;
     font-size: 25px;
 }
 
+
 .input{
-    margin: 10px;
-    padding-top: 10px;
-    padding-bottom: 5px;
     border: none;
     text-align: center;
     font-size: 20px;
-    border-bottom: 2px solid #000;;
+    border-bottom: 2px solid rgb(218, 194, 168);
     outline: none;
     background-color: rgb(245, 237, 229);
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px 0;
+}
+
+.input:focus{
+    border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 #submitBtn{
@@ -40,4 +68,15 @@ label{
     background-color: rgb(230, 212, 191);
     font-size: 20px;
     cursor: pointer;
+}
+
+#submitBtn:hover{
+    background-color: rgb(218, 194, 168);
+}
+
+/* media queries */
+@media screen and (max-width: 550px) {
+    .input {
+        
+    }
 }
